@@ -1,0 +1,15 @@
+/* Reset margins, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure html and body cover the entire viewport and use Flexbox for centering */
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Adjust the outer background color as needed */
+  font-family: Arial, sans-serif; /* Standard font */
+}

@@ -1,0 +1,68 @@
+
+/* Main App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #fff; /* Background color for the .App container */
+}
+
+/* Centering and styling titles, forms, and lists within .App */
+h1, form, ul {
+  width: 100%;
+  max-width: 600px; /* Adjust this as needed to control layout width */
+  margin: 0 auto; /* Centering horizontally */
+  padding: 0 20px; /* Padding for smaller screens */
+}
+h2{
+  text-align: center;
+}
+
+/* Form-specific styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, button {
+  width: 100%; /* Full width for input fields and buttons */
+  padding: 10px; /* Adequate padding for form elements */
+  margin: 10px 0; /* Space between form elements */
+}
+
+button {
+  background-color: #4CAF50; /* Green background for buttons */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45A049; /* Darker green on hover */
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  h1, form, ul {
+      padding: 0 10px; /* Reduced padding on smaller screens */
+  }
+
+  form {
+      width: 100%; /* Make the form take full width on smaller screens */
+  }
+
+  input, button {
+      padding: 8px; /* Slightly smaller padding */
+  }
+}
+
+/* Accessibility enhancements */
+:focus {
+  outline: none;
+}
